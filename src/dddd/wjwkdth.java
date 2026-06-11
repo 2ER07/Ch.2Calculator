@@ -13,39 +13,38 @@ public class wjwkdth {
 
 //    기능
     // 연산
-    public void isCalculating () {
+    public long isCalculating () {
         switch (operator) {
             case ("+"):
                 history = firstNumber + secondNumber;
-                break;
+                results.add(history);
             case ("-"):
                 history = firstNumber - secondNumber;
-                break;
+                results.add(history);
             case ("*"):
                 history = firstNumber * secondNumber;
-                break;
+                results.add(history);
             case ("/"):
                 if (secondNumber == 0) {
                     System.out.println("입력하신 값이 0은 이 계산기에서는 계산이 불가능합니다.");
-                    return;
+                    return 0;
                 } else {
                     history = firstNumber / secondNumber;
-                    break;
+                    results.add(history);
                 }
             default:
                 System.out.println("연산 이외에 것을 입력을 했습니다.");
-                return;
+                return 0;
 
         }
 
-        results.add(history);//연산 결과 값들을 컬렉션에 추가
+//        results.add(history);//연산 결과 값들을 컬렉션에 추가
     }
     private ArrayList<Long> results=new ArrayList<>(); //컬렉션을 ArrayList을 Long형태로 results이라는 저장소를 만들었다.
 
 
-    public ArrayList<Long> results() { //게터로 메인에서 컬렉션에 값들을 출력하게 하는것
+    public ArrayList<Long> getResults() { //게터로 메인에서 컬렉션에 값들을 출력하게 하는것
         return results;
-
     }
 
     public void oldest () {   //처음 전달 받은 값을 사용한다

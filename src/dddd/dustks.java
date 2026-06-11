@@ -21,9 +21,9 @@ public class dustks {
             isFinished=operator.next();
         }while (!isFinished.equals("exit"));
 
-        System.out.println("결과 값 : "+calendar.results());
+        System.out.println("결과 값 : "+calendar.getResults());
         calendar.oldest();
-        System.out.println("첫번째 삭제 후 결과 값 : "+calendar.results());
+        System.out.println("첫번째 삭제 후 결과 값 : "+calendar.getResults());
 
 
     }
