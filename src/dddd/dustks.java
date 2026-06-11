@@ -10,11 +10,11 @@ public class dustks {
         String isFinished;
         do {
             System.out.print("계산시 사용할 첫번째 정수 입력하세요 : ");
-            calendar.firstNumber=operator.nextLong();
+            calendar.setFirstNumber(operator.nextLong());
             System.out.print("계산시 사용할 연산자 입력하세요(예:+,-,*,/) : ");
-            calendar.operator=operator.next();
+            calendar.setOperator(operator.next());
             System.out.print("계산시 사용할 두번째 정수 입력하세요 : ");
-            calendar.secondNumber=operator.nextLong();
+            calendar.setSecondNumber(operator.nextLong());
             calendar.isCalculating();
 
             System.out.println("계산을 이어서 하실건가요?(안하실거면 exit를 입력해주세요)");
@@ -23,7 +23,7 @@ public class dustks {
 
         System.out.println("결과 값 : "+calendar.results());
         calendar.oldest();
-        System.out.println("결과 값 : "+calendar.results());
+        System.out.println("첫번째 삭제 후 결과 값 : "+calendar.results());
 
 
     }

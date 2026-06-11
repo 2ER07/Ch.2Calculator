@@ -3,10 +3,10 @@ package dddd;
 import java.util.ArrayList;
 
 public class wjwkdth {
-//    속성
-    Long firstNumber;  //첫번째로 정수
-     Long secondNumber; // 두번째 정수
-    String operator; // 연산자
+    //    속성
+   private Long firstNumber;  //첫번째로 정수
+    private  Long secondNumber; // 두번째 정수
+    private  String operator; // 연산자
     private Long history; //연산된 결과값을 컬렉션 넣기 위해 사용합니다.
 
 
@@ -53,6 +53,17 @@ public class wjwkdth {
             System.out.println("연산하신 게 없습니다");
             return;
         }results.remove(0);
+    }
+
+    //세터를 통해 캡술화 작업
+    public void setFirstNumber(Long firstNumber){
+        this.firstNumber=firstNumber;
+    }
+    public void setOperator(String operator){
+        this.operator=operator;
+    }
+    public void setSecondNumber(Long secondNumber){
+        this.secondNumber=secondNumber;
     }
 }
 
