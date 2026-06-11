@@ -49,7 +49,7 @@ public class App {
         } while (!isFinished.equals("exit"));
         calendar.a6();
 
-        calendar.a5();
+        System.out.println("결과값들 = " + calendar.results());
 
 
 

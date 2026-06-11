@@ -1,5 +1,6 @@
 package com.example.calculator;
 
+import java.util.AbstractList;
 import java.util.ArrayList;
 
 
@@ -24,7 +25,7 @@ public class Calculator {
         }
         }
 
-        public void a5(){      //그동안 모아운 결과값 출력
-            System.out.println("기록물" + results);
+        public AbstractList<Long> results(){      //그동안 모아운 결과값 출력
+            return results;
         }
         }
