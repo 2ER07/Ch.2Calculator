@@ -22,12 +22,15 @@ public class Calculator {
             case ("+"):
                 history = firstNumber + secondNumber;
                 results.add(history);
+                break;
             case ("-"):
                 history = firstNumber - secondNumber;
                 results.add(history);
+                break;
             case ("*"):
                 history = firstNumber * secondNumber;
                 results.add(history);
+                break;
             case ("/"):
                 if (secondNumber == 0) {
                     System.out.println("입력하신 값이 0은 이 계산기에서는 계산이 불가능합니다.");
@@ -42,7 +45,8 @@ public class Calculator {
 
         }
 
-//        results.add(history);//연산 결과 값들을 컬렉션에 추가
+//       results.add(history);//연산 결과 값들을 컬렉션에 추가
+        return history;
     }
     private ArrayList<Long> results=new ArrayList<>(); //컬렉션을 ArrayList을 Long형태로 results이라는 저장소를 만들었다.
 
