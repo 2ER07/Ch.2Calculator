@@ -48,6 +48,7 @@ public class App {
             isFinished = s1.next();
         } while (!isFinished.equals("exit"));
         calendar.a6();
+
         calendar.a5();
 
 
