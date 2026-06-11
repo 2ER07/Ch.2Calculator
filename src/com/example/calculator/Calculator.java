@@ -12,7 +12,7 @@ public class Calculator {
         public void addResults(long history) { //연산 결과 값 받아오기
             results.add(history);
         }
-        public void a6() {          // 첫번째 결과물을 삭제
+        public void a6() {          // 첫번째 연산된 결과값 삭제
             try {                   // 아무 연산도 안하고 종료 시에 대한 대처
                 if (results.isEmpty()) {
                     throw new IllegalArgumentException("실행한 연산들이 없습니다");
