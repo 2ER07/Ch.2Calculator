@@ -7,7 +7,7 @@ public class Calculator {
 //    public static void main(String[] args) {
 //        System.out.println("Hello, Calculator!");
 
-        private ArrayList<Long> results=new ArrayList<Long>();
+        private final ArrayList<Long> results= new ArrayList<>();
 
         void addResults(long d) {
             results.add(d);
@@ -20,13 +20,3 @@ public class Calculator {
             System.out.println("기록물" + results);
         }
         }
-
-
-
-
-
-
-
-
-
-
