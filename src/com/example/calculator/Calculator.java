@@ -7,12 +7,13 @@ import java.util.ArrayList;
 public class Calculator {
 //    public static void main(String[] args) {
 //        System.out.println("Hello, Calculator!");
+    private ArrayList<Long> results= new ArrayList<>();
 
-        private ArrayList<Long> results= new ArrayList<>();
 
-        public void addResults(long history) { //연산 결과 값 받아오기
+    public void addResults(long history) { //연산 결과 값 받아오기
             results.add(history);
         }
+
         public void a6() {          // 첫번째 연산된 결과값 삭제
             try {                   // 아무 연산도 안하고 종료 시에 대한 대처
                 if (results.isEmpty()) {
@@ -25,7 +26,7 @@ public class Calculator {
         }
         }
 
-        public AbstractList<Long> results(){      //그동안 모아운 결과값 출력
+        public AbstractList<Long> results(){      //그동안 모아운 결과값을 게터로 반화
             return results;
         }
         }
