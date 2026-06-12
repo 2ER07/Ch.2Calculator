@@ -21,7 +21,7 @@ public class App {
 
             System.out.println("계산을 이어서 하실건가요?(안하실거면 exit를 입력해주세요)");
             isFinished=operator.next();
-        }while (!isFinished.equals("exit"));
+        }while (isFinished.equals("exit"));
 
         System.out.println("결과 값 : "+calendar.getResults());
         calendar.oldest();
