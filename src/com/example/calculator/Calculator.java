@@ -16,7 +16,7 @@ public class Calculator {
 
 
     //    기능
-    // 연산
+    // 연산기능
     public long isCalculating () {
         switch (operator) {
             case ("+"):
@@ -38,11 +38,11 @@ public class Calculator {
                 } else {
                     history = firstNumber / secondNumber;
                     results.add(history);
+                    break;
                 }
             default:
                 System.out.println("연산 이외에 것을 입력을 했습니다.");
                 return 0;
-
         }
 
 //       results.add(history);//연산 결과 값들을 컬렉션에 추가
@@ -52,10 +52,10 @@ public class Calculator {
 
 
     public ArrayList<Long> getResults() { //게터로 메인에서 컬렉션에 값들을 출력하게 하는것
-        return results;
+        return new ArrayList<Long>(results);
     }
 
-    public void oldest () {   //처음 전달 받은 값을 사용한다
+    public void oldest () {   //처음 전달 받은 값을 삭제를 한다
         if (results.isEmpty()) {
             System.out.println("연산하신 게 없습니다");
             return;
